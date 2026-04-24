@@ -259,7 +259,8 @@ function Index() {
           initial={{ opacity: 0, scale: 0.85, x: 80, y: -20, rotate: 18 }}
           animate={{ opacity: 1, scale: 1, x: 0, y: 0, rotate: 8 }}
           transition={{ duration: 2.2, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-          style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "-18%"]) }}
+          style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "-18%"])
+          }}
           className="absolute z-[5] pointer-events-none animate-drift drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)]
                      right-[-18%] sm:right-[-10%] md:right-[-6%] lg:right-[-4%] xl:right-[-2%]
                      top-[6%] md:top-[8%] lg:top-[10%]
