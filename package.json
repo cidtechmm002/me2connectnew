@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "NITRO_PRESET=cloudflare-pages vite build",
-    "postbuild": "cp -r dist/server/* dist/client/ && cp dist/server/server.js dist/client/_worker.js",
+    "postbuild": "cp -r dist/server/* dist/client/ && rm -f dist/client/wrangler.json && cp dist/server/server.js dist/client/_worker.js",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
